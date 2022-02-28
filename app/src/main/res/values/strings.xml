@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HWAndroid1Lesson1P</string>
+    <string-array name="spinner_array">
+        <item>All</item>
+        <item>Maybe All</item>
+        <item>All again</item>
+    </string-array>
+</resources>
