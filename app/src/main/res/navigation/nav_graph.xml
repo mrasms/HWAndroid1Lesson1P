@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_quiz">
+
+    <fragment
+        android:id="@+id/fragment_quiz"
+        android:name="com.example.hwandroid1lesson1p.QuizFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_fragment_quiz_to_historyFragment2"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.hwandroid1lesson1p.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_fragment_quiz"
+            app:destination="@id/fragment_quiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.hwandroid1lesson1p.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment2_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+</navigation>

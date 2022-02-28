@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuizFragment">
+
+    <TextView
+        android:id="@+id/tv_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:text="Quiz"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_icon"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="203dp"
+        android:text="Questions amount:"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="32dp"
+        android:text="10"
+        android:textColor="#3F3356"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_questions"
+        app:layout_constraintLeft_toRightOf="@id/tv_questions" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_questions" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Category"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/spinner_category"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:entries="@array/spinner_array"
+        app:layout_constraintStart_toStartOf="@id/spinner_dificulty"
+        app:layout_constraintTop_toBottomOf="@id/tv_category" />
+
+    <TextView
+        android:id="@+id/tv_dificulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Dificulty"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/spinner_dificulty"
+        app:layout_constraintTop_toBottomOf="@id/spinner_category" />
+
+    <Spinner
+        android:id="@+id/spinner_dificulty"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/spinner_array"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dificulty" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_dificulty" />
+
+    <!--<ImageView
+        android:id="@+id/im_nav1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:src="@drawable/hape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_start"
+        app:layout_constraintTop_toBottomOf="@id/btn_start" />
+
+    <ImageView
+        android:id="@+id/im_nav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_inactive"
+        app:layout_constraintLeft_toRightOf="@+id/im_nav1"
+        app:layout_constraintRight_toLeftOf="@+id/im_nav3"
+        app:layout_constraintTop_toTopOf="@+id/im_nav1" />
+
+    <ImageView
+        android:id="@+id/im_nav3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_inactive"
+        app:layout_constraintLeft_toRightOf="@+id/btn_start"
+        app:layout_constraintTop_toTopOf="@id/im_nav2" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

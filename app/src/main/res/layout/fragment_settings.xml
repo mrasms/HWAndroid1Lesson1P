@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".SettingsFragment">
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="29dp"
+        app:cardBackgroundColor="#EEEEEE"
+        app:layout_constraintLeft_toLeftOf="@id/tv_settings"
+        app:layout_constraintTop_toBottomOf="@id/tv_settings">
+
+
+        <TextView
+            android:id="@+id/tv_dificulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="25dp"
+            android:text="Share this app"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/im_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="370dp"
+            android:layout_marginTop="34.75dp"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/stroke_vector" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_second"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        app:cardBackgroundColor="#EEEEEE"
+        app:layout_constraintLeft_toLeftOf="@id/tv_settings"
+        app:layout_constraintTop_toBottomOf="@id/card_view">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="25dp"
+            android:text="Rate us"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/im_more_info_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="370dp"
+            android:layout_marginTop="34.75dp"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/stroke_vector" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
